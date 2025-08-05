@@ -18,7 +18,9 @@ public class DuckDuckGoSearch {
 
         try {
             // 1. Open DuckDuckGo
+
             driver.get("https://duckduckgo.com");
+            driver.manage().window().maximize();
 
             // 2. Enter query in the search box and submit
             WebElement searchBox = driver.findElement(By.name("q"));
